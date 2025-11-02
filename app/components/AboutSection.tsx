@@ -103,7 +103,7 @@ export default function AboutSection() {
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-center -mb-1 md:-mb-15">
           {/* Left Column - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -225,7 +225,7 @@ export default function AboutSection() {
         </div>
 
         {/* CTA Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -233,7 +233,7 @@ export default function AboutSection() {
           className="text-center"
         >
           <div className="bg-gradient-to-r from-[#1c4d9f] to-[#2563b8] rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-            {/* Background Pattern */}
+      
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 left-0 w-32 h-32 bg-white/20 rounded-full -translate-x-16 -translate-y-16" />
               <div className="absolute bottom-0 right-0 w-40 h-40 bg-white/20 rounded-full translate-x-20 translate-y-20" />
@@ -269,7 +269,7 @@ export default function AboutSection() {
               <FiArrowRight className="w-5 h-5" />
             </motion.a>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

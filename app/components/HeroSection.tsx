@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex flex-col items-center justify-center pt-35 pb-16 px-4 relative overflow-hidden bg-gradient-to-br from-white via-[#f7f7f7] to-white"
+      className="w-full min-h-screen flex flex-col items-center justify-center pt-40 pb-16 px-4 relative overflow-hidden bg-gradient-to-br from-white via-[#f7f7f7] to-white"
     >
       {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -55,20 +55,6 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-[linear-gradient(rgba(28,77,159,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(28,77,159,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
         </div>
       </div>
-
-      {/* Floating Elements */}
-      <motion.div
-        className="absolute top-20 right-20 hidden xl:block"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-2xl border border-white/20">
-          <div className="flex items-center gap-2 text-[#1c4d9f]">
-            <FiAward className="w-5 h-5" />
-            <span className="text-sm font-semibold">Award Winning</span>
-          </div>
-        </div>
-      </motion.div>
 
       <motion.div
         className="absolute bottom-40 left-20 hidden lg:block"
